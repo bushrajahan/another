@@ -3,9 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruit Burst</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font awsome -->
+<script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+    <!-- taliwind css and daisy ui -->
+    <script src="https://cdn.tailwindcss.com"></script>   
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                bg: '#F85559;',
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+        .lato{
+            font-family: 'Lato', sans-serif;
+        }
+      </style>
 </head>
 <body>
+    <header class="container mx-auto lato ">
+        <!-- header starts here -->
+        <section>
+            <nav class="navbar   lg:bg-bg text-white lg:rounded-full ">
+                <!-- Navbar items on the left -->
+                <div class="navbar-start hidden lg:flex font-bold text-xs">
+                  <a href="#" class="text-white px-4 py-2">Home</a>
+                  <a href="#" class="text-white px-4 py-2">About Us</a>
+              
     
+                      <a href="#" class="text-white px-4 py-2">Shop</a>
+                      <a href="#" class="text-white px-4 py-2">All Fruits</a>
+                    
+                </div>
+               
+                <!-- Icon in the middle (centered) -->
+                <div class="hidden lg:flex  lg:justify-center lg:items-center lg:w-60  ">
+                    <div>
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div class="flex">
+                        <h2 class="font-bold text-3xl pl-1.5"> Fruit Burst </h2>
+                    </div>
+              
+                </div>
+                
+                <!-- Input on the right -->
+                <div class="navbar-end hidden lg:flex">
+                    <div class="relative form-control">
+                        <input type="text" placeholder="Search here" class="input input-bordered rounded-full bg-white pr-10 max-w-full" /> <!-- Add pr-10 for padding-right -->
+                        <i class="fa-solid fa-magnifying-glass absolute top-1/2 right-2 transform -translate-y-1/2 text-black"></i>
+                      </div>
+                </div>
+                </div>
+              
+                <!-- Mobile Dropdown -->
+                <div class="navbar-start lg:hidden">
+                    <div>
+                        <img src="./images/logo.png" class="" alt="">
+                    </div>
+                    <div class="flex">
+                        <h2> Fruit Burst </h2>
+                    </div>
+                </div>
+                <div class="navbar-end lg:hidden ">
+                    <div class="navbar-end lg:hidden">
+                        <div class="dropdown dropdown-end ">
+                          <button tabindex="0" class="btn btn-square btn-ghost">
+                            <i class="fa-solid fa-bars text-black text-[50px] "></i>
+                          </button>
+                          <ul tabindex="0" class="menu dropdown-content bg-bg rounded-box w-55">
+                            <a href="#" class="text-white px-4 py-2">Home</a>
+                            <a href="#" class="text-white px-4 py-2">About Us</a>
+                        
+              
+                                <a href="#" class="text-white px-4 py-2">Shop</a>
+                                <a href="#" class="text-white px-4 py-2">All Fruits</a>
+                                <div class="relative form-control">
+                                    <input type="text" placeholder="Search here" class="input input-bordered rounded-full bg-white pr-10" /> <!-- Add pr-10 for padding-right -->
+                                    <i class="fa-solid fa-magnifying-glass absolute top-1/2 right-2 transform -translate-y-1/2 text-black"></i>
+                                  </div>
+                          </ul>
+                        </div>
+                      </div>
+                  </div>
+
+              </nav>
+              
+         </section>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
